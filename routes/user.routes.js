@@ -37,7 +37,7 @@ UserRouter.post("/login", async (req, res) => {
       res.json({ msg: "Invalid email or password" });
     }
   } catch (error) {
-    res.status(500).json({ msg: "Error logging in user" });
+    res.status(500).json({ error });
   }
 });
 
